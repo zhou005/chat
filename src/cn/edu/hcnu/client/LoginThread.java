@@ -1,5 +1,6 @@
 package cn.edu.hcnu.client;
 
+
 import cn.edu.hcnu.util.MD5;
 
 import java.awt.BorderLayout;
@@ -15,10 +16,11 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+
 /**
  * 登录线程
  */
-public class LoginThread {
+public class LoginThread extends Thread {
     private JFrame loginf;
 
     private JTextField t;
