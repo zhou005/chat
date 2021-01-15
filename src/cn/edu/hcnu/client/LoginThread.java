@@ -99,6 +99,7 @@ public class LoginThread extends Thread {
                         String encodePassword = rs.getString("PASSWORD");
                         if (MD5.checkpassword(password, encodePassword)) {
                             System.out.println("登录成功");
+                            loginf.setVisible(false);
                         } else {
                             System.out.println("登录失败");
                         }
